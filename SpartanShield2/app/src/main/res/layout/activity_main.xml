@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="inc.tms.develope.spartanshield2.MainActivity">
+
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:id="@+id/imbHome"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:src="@drawable/websitelogo" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNews"
+                android:background="@color/white"
+                android:text="News"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/btnFeature"
+                android:text="Feature"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/btnSports"
+                android:text="Sports"/>
+
+            <Button
+                android:id="@+id/btnOpinion"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Opinion" />
+            <Button
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAE"
+                android:text="Arts &amp; Entertainment   "/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStudentLife"
+                android:background="@color/white"
+                android:text="Student Life"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVideo"
+                android:background="@color/white"
+                android:text="Video"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+    android:padding="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="10dp"
+    android:layout_margin="10dp"
+    apps:cardCornerRadius="8dp"
+    apps:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#000080"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="2017-10-01 12:59"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/publisherText"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="2017-10-01 12:59"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:text="Content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="14sp"/>
+
+
+<TextView
+    android:id="@+id/linkText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
